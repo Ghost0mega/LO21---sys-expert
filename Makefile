@@ -1,30 +1,10 @@
-CC := gcc
-CFLAGS := -std=c99 -Iinclude -Wall -Wextra -O2 -g
+all:
+	@cmake --build build
 
-SRCDIR := src
-BUILDDIR := build
-BINDIR := bin
-TARGET := sys-ex.exe
-
-SRCS := $(wildcard $(SRCDIR)/*.c)
-OBJS := $(patsubst $(SRCDIR)/%.c,$(BUILDDIR)/%.o,$(SRCS))
-
-.PHONY: all clean run
-
-all: $(BINDIR)/$(TARGET)
-
-$(BINDIR)/$(TARGET): $(OBJS) | $(BINDIR)
-	$(CC) $(LDFLAGS) -o $@ $(OBJS)
-
-$(BUILDDIR)/%.o: $(SRCDIR)/%.c | $(BUILDDIR)
-	$(CC) $(CFLAGS) -c -o $@ $<
-
-$(BUILDDIR) $(BINDIR):
-	mkdir -p $@
+run:
+	@cmake --build build --target run
 
 clean:
-# 	delete build and bin directories
-	rm -rf $(BUILDDIR) $(BINDIR)
+	@cmake --build build --target clean
 
-run: all
-	./$(BINDIR)/$(TARGET)
+.PHONY: all run clean
