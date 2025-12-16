@@ -10,7 +10,33 @@
                 "isDefault": true
             },
             "problemMatcher": ["$gcc"],
-            "detail": "Builds the project using the wrapper Makefile"
+            "detail": "Builds the project",
+            "presentation": {
+                "echo": true,
+                "reveal": "silent",
+                "focus": false,
+                "panel": "shared",
+                "showReuseMessage": false,
+                "clear": true
+            }
+        },
+        {
+            "label": "Run Project",
+            "type": "shell",
+            "command": "./build/sys_expert",
+            "dependsOn": "build",
+            "group": {
+                "kind": "test",
+                "isDefault": true
+            },
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": true,
+                "panel": "shared",
+                "showReuseMessage": true,
+                "clear": false
+            }
         },
         {
             "label": "clean",
