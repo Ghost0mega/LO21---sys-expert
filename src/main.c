@@ -84,7 +84,13 @@ int main(int argc, char *argv[]) {
   facts_add(&bf, proposition_make("E", 0));
 
   if (text_only) {
-    // Mode texte: imprimer le graphe de la base de connaissances (exemple)
+    // Mode texte: afficher les faits avant/après inférence et le graphe ASCII
+    printf("Avant inférence:\n");
+    print_facts(&bf);
+    inference_forward_chain(&bc, &bf);
+    printf("\nAprès inférence:\n");
+    print_facts(&bf);
+    printf("\nGraphe de la base de connaissances:\n");
     bc_print_ascii(&bc);
   } else {
 #ifdef HAVE_CURSES
