@@ -1,0 +1,41 @@
+#include "bc.h"
+
+/**
+ * Crée une base de connaissances vide.
+ * @return Base de connaissances initialisée.
+ */
+BC bc_create() {
+    BC bc; bc.regles = listr_create(); return bc;
+}
+
+/**
+ * Libère une base de connaissances.
+ * @param bc Pointeur vers la base.
+ * @return Aucun.
+ */
+void bc_free(BC *bc) {
+    if (!bc) return;
+    listr_free(&bc->regles);
+}
+
+/**
+ * Ajoute une règle à la base (en queue).
+ * @param bc Base de connaissances.
+ * @param r Règle à ajouter.
+ * @return Aucun.
+ */
+void bc_add_regle(BC *bc, Regle r) {
+    if (!bc) return;
+    listr_push_back(&bc->regles, r);
+}
+
+/**
+ * Accède à la règle en tête de la base.
+ * @param bc Base de connaissances.
+ * @param out Sortie: règle en tête.
+ * @return 1 si succès, 0 sinon.
+ */
+int bc_head_regle(const BC *bc, Regle *out) {
+    if (!bc) return 0;
+    return listr_head(&bc->regles, out);
+}
