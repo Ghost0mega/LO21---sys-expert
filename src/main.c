@@ -7,6 +7,7 @@
 #include "inference.h"
 #include "print.h"
 #include "ui.h"
+#include <string.h>
 
 /**
  * Affiche les faits de la base.
@@ -25,7 +26,12 @@ static void print_facts(const BaseFaits *bf) {
 }
 
 int main(int argc, char *argv[]) {
-  (void)argc; (void)argv;
+  int text_only = 0;
+  for (int i = 1; i < argc; ++i) {
+    if (strcmp(argv[i], "-t") == 0 || strcmp(argv[i], "--text-only") == 0) {
+      text_only = 1;
+    }
+  }
 
   BC bc = bc_create();
 
@@ -77,8 +83,20 @@ int main(int argc, char *argv[]) {
   facts_add(&bf, proposition_make("D", 0));
   facts_add(&bf, proposition_make("E", 0));
 
-  // Lance l'interface ncurses (permet de basculer les faits de base, voir les faits vrais en surbrillance)
-  run_ui(&bc);
+  if (text_only) {
+    // Mode texte: imprimer le graphe de la base de connaissances (exemple)
+    bc_print_ascii(&bc);
+  } else {
+#ifdef HAVE_CURSES
+    // Lance l'interface ncurses
+    run_ui(&bc);
+#else
+    fprintf(stderr, "Error: ncurses not installed/detected. Run with -t/--text-only to print the example knowledge base.\n");
+    bc_free(&bc);
+    facts_free(&bf);
+    return 1;
+#endif
+  }
 
   // Cleanup
   bc_free(&bc);

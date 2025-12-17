@@ -14,6 +14,17 @@ file(GLOB_RECURSE SYS_EXPERT_SOURCES CONFIGURE_DEPENDS
     src/*.c
 )
 
+# Ncurses for TUI (prefer wide-character library for UTF-8)
+set(CURSES_NEED_WIDE TRUE)
+find_package(Curses)
+
+# If curses is not found, exclude ui.c from sources so build succeeds
+set(UI_SOURCE "${CMAKE_CURRENT_SOURCE_DIR}/src/ui.c")
+if (NOT CURSES_FOUND)
+    list(REMOVE_ITEM SYS_EXPERT_SOURCES "${UI_SOURCE}")
+    message(STATUS "Curses not found; building without TUI. Use -t/--text-only to run.")
+endif()
+
 add_executable(sys_expert ${SYS_EXPERT_SOURCES})
 
 # Include headers from src/ for all targets
@@ -24,12 +35,8 @@ if (CMAKE_C_COMPILER_ID MATCHES "GNU|Clang")
     target_compile_options(sys_expert PRIVATE -Wall -Wextra -Wpedantic)
 endif()
 
-# Ncurses for TUI (prefer wide-character library for UTF-8)
-set(CURSES_NEED_WIDE TRUE)
-find_package(Curses)
 if (CURSES_FOUND)
     target_include_directories(sys_expert PRIVATE ${CURSES_INCLUDE_DIR})
     target_link_libraries(sys_expert PRIVATE ${CURSES_LIBRARIES})
-else()
-    message(WARNING "Curses not found; TUI may fail to link. Install ncurses and reconfigure.")
+    target_compile_definitions(sys_expert PRIVATE HAVE_CURSES)
 endif()

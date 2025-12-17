@@ -13,8 +13,13 @@ L'exemple fourni modélise un diagnostic auto simplifié.
 ```bash
 cmake -S . -B build
 cmake --build build -j
-./build/sys_expert
+./build/sys_expert                 # mode TUI (si ncurses installé)
+./build/sys_expert -t              # mode texte uniquement
+./build/sys_expert --text-only     # idem, texte uniquement
 ```
+
+En mode texte, le programme imprime le graphe ASCII de la base d'exemple.
+Si ncurses n'est pas installé et que vous lancez sans `-t/--text-only`, une erreur explicite est affichée.
 
 ## Structure du code
 - `src/proposition.h`: type `Proposition` (nom + négation `¬`).
