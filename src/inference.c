@@ -55,7 +55,16 @@ int facts_contains(const BaseFaits *bf, const Proposition *p) {
 static int premises_satisfied(const Regle *r, const BaseFaits *bf) {
     const ListPropositionNode *cur = r->premises.head;
     while (cur) {
-        if (!facts_contains(bf, &cur->value)) return 0;
+        const Proposition *p = &cur->value;
+        if (!p->negated) {
+            if (!facts_contains(bf, p)) return 0;
+        } else {
+            // Negated premise: satisfied if the positive counterpart is NOT present
+            Proposition pos = proposition_make(p->name, 0);
+            int pos_present = facts_contains(bf, &pos);
+            proposition_free(&pos);
+            if (pos_present) return 0;
+        }
         cur = cur->next;
     }
     return 1;

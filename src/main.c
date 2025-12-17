@@ -6,6 +6,7 @@
 #include "bc.h"
 #include "inference.h"
 #include "print.h"
+#include "ui.h"
 
 /**
  * Affiche les faits de la base.
@@ -76,16 +77,8 @@ int main(int argc, char *argv[]) {
   facts_add(&bf, proposition_make("D", 0));
   facts_add(&bf, proposition_make("E", 0));
 
-  printf("\nReprésentation ASCII de la base de connaissances:\n");
-  bc_print_ascii(&bc);
-
-  printf("Avant inférence:\n");
-  print_facts(&bf);
-
-  inference_forward_chain(&bc, &bf);
-
-  printf("\nAprès inférence:\n");
-  print_facts(&bf);
+  // Lance l'interface ncurses (permet de basculer les faits de base, voir les faits vrais en surbrillance)
+  run_ui(&bc);
 
   // Cleanup
   bc_free(&bc);

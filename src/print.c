@@ -251,6 +251,16 @@ void bc_print_ascii(const BC *bc) {
     }
 
     // Helper to append to a line
+    // Render each rule column (choose glyphs based on locale)
+    int use_utf8 = 1;
+#if defined(__STDC_ISO_10646__) || defined(__STDC_UTF_16__) || defined(__STDC_UTF_32__)
+    use_utf8 = 1;
+#endif
+    const char *ch_vert = use_utf8 ? "│" : "|";
+    const char *ch_tee  = use_utf8 ? "┤" : "+";
+    const char *ch_top  = use_utf8 ? "┐" : "+";
+    const char *ch_bot  = use_utf8 ? "┘" : "+";
+
     // Render each rule column
     for (RuleDraw *rd = rules; rd; rd = rd->next) {
         // For consistent spacing between columns
@@ -258,10 +268,6 @@ void bc_print_ascii(const BC *bc) {
 
         // For each line, draw connector
         for (int l = 0; l < total_lines; ++l) {
-            const char *ch_vert = "│";
-            const char *ch_tee  = "┤";
-            const char *ch_top  = "┐";
-            const char *ch_bot  = "┘";
             if (rd->top >= 0 && l >= rd->top && l <= rd->bottom) {
                 int is_prem = 0, neg = 0;
                 if (premises_contains_line(rd->premises, l, &neg)) is_prem = 1;
