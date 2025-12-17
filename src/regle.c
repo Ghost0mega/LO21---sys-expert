@@ -108,3 +108,8 @@ Proposition regle_get_conclusion(const Regle *r) {
     }
     return r->conclusion;
 }
+
+void regle_remove_premises_by_name(Regle *r, const char *name) {
+    if (!r || !name) return;
+    (void)listp_remove_all_by_name(&r->premises, name);
+}

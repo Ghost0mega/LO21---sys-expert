@@ -112,3 +112,24 @@ int listp_contains(const ListProposition *list, const Proposition *value) {
     if (!list) return 0;
     return listp_contains_recursive(list->head, value);
 }
+
+int listp_remove_all_by_name(ListProposition *list, const char *name) {
+    if (!list || !name) return 0;
+    int removed = 0;
+    ListPropositionNode *prev = NULL, *cur = list->head;
+    while (cur) {
+        if (cur->value.name && strcmp(cur->value.name, name) == 0) {
+            ListPropositionNode *next = cur->next;
+            if (prev) prev->next = next; else list->head = next;
+            if (cur == list->tail) list->tail = prev;
+            proposition_free(&cur->value);
+            free(cur);
+            cur = next;
+            list->size--;
+            removed++;
+            continue;
+        }
+        prev = cur; cur = cur->next;
+    }
+    return removed;
+}
