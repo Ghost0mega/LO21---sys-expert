@@ -2,7 +2,7 @@
 #include "list_regle.h"
 
 typedef struct BC {
-    ListRegle regles;
+  ListRegle regles;
 } BC;
 
 /**

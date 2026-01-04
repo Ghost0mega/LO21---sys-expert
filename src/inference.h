@@ -3,7 +3,7 @@
 #include "list_proposition.h"
 
 typedef struct BaseFaits {
-    ListProposition facts;
+  ListProposition facts;
 } BaseFaits;
 
 /**

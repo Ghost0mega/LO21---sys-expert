@@ -2,14 +2,14 @@
 #include "proposition.h"
 
 typedef struct ListPropositionNode {
-    Proposition value;
-    struct ListPropositionNode *next;
+  Proposition value;
+  struct ListPropositionNode *next;
 } ListPropositionNode;
 
 typedef struct ListProposition {
-    ListPropositionNode *head;
-    ListPropositionNode *tail;
-    size_t size;
+  ListPropositionNode *head;
+  ListPropositionNode *tail;
+  size_t size;
 } ListProposition;
 
 /**
@@ -57,12 +57,14 @@ int listp_head(const ListProposition *list, Proposition *out);
 int listp_remove_first(ListProposition *list, const Proposition *value);
 
 /**
- * Test récursif d'appartenance d'une proposition dans une liste (à partir d'un nœud).
+ * Test récursif d'appartenance d'une proposition dans une liste (à partir d'un
+ * nœud).
  * @param node Nœud de départ.
  * @param value Proposition recherchée.
  * @return 1 si trouvé, 0 sinon.
  */
-int listp_contains_recursive(const ListPropositionNode *node, const Proposition *value);
+int listp_contains_recursive(const ListPropositionNode *node,
+                             const Proposition *value);
 
 /**
  * Teste si une proposition appartient à la liste.

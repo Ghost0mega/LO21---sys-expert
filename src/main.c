@@ -1,12 +1,12 @@
 // Demo program building the example knowledge base and running inference
-#include <stdio.h>
-#include <stdlib.h>
-#include "proposition.h"
-#include "regle.h"
 #include "bc.h"
 #include "inference.h"
 #include "print.h"
+#include "proposition.h"
+#include "regle.h"
 #include "ui.h"
+#include <stdio.h>
+#include <stdlib.h>
 #include <string.h>
 
 /**
@@ -97,7 +97,8 @@ int main(int argc, char *argv[]) {
     // Lance l'interface ncurses
     run_ui(&bc);
 #else
-    fprintf(stderr, "Error: ncurses not installed/detected. Run with -t/--text-only to print the example knowledge base.\n");
+    fprintf(stderr, "Error: ncurses not installed/detected. Run with "
+                    "-t/--text-only to print the example knowledge base.\n");
     bc_free(&bc);
     facts_free(&bf);
     return 1;

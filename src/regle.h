@@ -2,9 +2,9 @@
 #include "list_proposition.h"
 
 typedef struct Regle {
-    ListProposition premises; // list of propositions; tail-insertion
-    int has_conclusion;
-    Proposition conclusion;
+  ListProposition premises; // list of propositions; tail-insertion
+  int has_conclusion;
+  Proposition conclusion;
 } Regle;
 
 /**

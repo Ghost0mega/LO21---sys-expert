@@ -1,12 +1,17 @@
-#include <stdlib.h>
 #include "regle.h"
+#include <stdlib.h>
 
 /**
  * Crée une règle vide (sans conclusion, prémisse vide).
  * @return Règle initialisée.
  */
 Regle regle_create() {
-    Regle r; r.premises = listp_create(); r.has_conclusion = 0; r.conclusion = proposition_make("", 0); proposition_free(&r.conclusion); return r;
+  Regle r;
+  r.premises = listp_create();
+  r.has_conclusion = 0;
+  r.conclusion = proposition_make("", 0);
+  proposition_free(&r.conclusion);
+  return r;
 }
 
 /**
@@ -15,10 +20,12 @@ Regle regle_create() {
  * @return Aucun.
  */
 void regle_free(Regle *r) {
-    if (!r) return;
-    listp_free(&r->premises);
-    if (r->has_conclusion) proposition_free(&r->conclusion);
-    r->has_conclusion = 0;
+  if (!r)
+    return;
+  listp_free(&r->premises);
+  if (r->has_conclusion)
+    proposition_free(&r->conclusion);
+  r->has_conclusion = 0;
 }
 
 /**
@@ -28,8 +35,9 @@ void regle_free(Regle *r) {
  * @return Aucun.
  */
 void regle_add_premise(Regle *r, Proposition p) {
-    if (!r) return;
-    listp_push_back(&r->premises, p);
+  if (!r)
+    return;
+  listp_push_back(&r->premises, p);
 }
 
 /**
@@ -39,10 +47,12 @@ void regle_add_premise(Regle *r, Proposition p) {
  * @return Aucun.
  */
 void regle_set_conclusion(Regle *r, Proposition p) {
-    if (!r) return;
-    if (r->has_conclusion) proposition_free(&r->conclusion);
-    r->conclusion = p;
-    r->has_conclusion = 1;
+  if (!r)
+    return;
+  if (r->has_conclusion)
+    proposition_free(&r->conclusion);
+  r->conclusion = p;
+  r->has_conclusion = 1;
 }
 
 /**
@@ -52,8 +62,9 @@ void regle_set_conclusion(Regle *r, Proposition p) {
  * @return 1 si trouvé, 0 sinon.
  */
 int regle_premise_contains_recursive(const Regle *r, const Proposition *p) {
-    if (!r) return 0;
-    return listp_contains_recursive(r->premises.head, p);
+  if (!r)
+    return 0;
+  return listp_contains_recursive(r->premises.head, p);
 }
 
 /**
@@ -63,8 +74,9 @@ int regle_premise_contains_recursive(const Regle *r, const Proposition *p) {
  * @return 1 si supprimé, 0 sinon.
  */
 int regle_remove_premise(Regle *r, const Proposition *p) {
-    if (!r) return 0;
-    return listp_remove_first(&r->premises, p);
+  if (!r)
+    return 0;
+  return listp_remove_first(&r->premises, p);
 }
 
 /**
@@ -73,8 +85,9 @@ int regle_remove_premise(Regle *r, const Proposition *p) {
  * @return 1 si vide, 0 sinon.
  */
 int regle_premise_is_empty(const Regle *r) {
-    if (!r) return 1;
-    return listp_is_empty(&r->premises);
+  if (!r)
+    return 1;
+  return listp_is_empty(&r->premises);
 }
 
 /**
@@ -84,8 +97,9 @@ int regle_premise_is_empty(const Regle *r) {
  * @return 1 si succès, 0 sinon.
  */
 int regle_premise_head(const Regle *r, Proposition *out) {
-    if (!r) return 0;
-    return listp_head(&r->premises, out);
+  if (!r)
+    return 0;
+  return listp_head(&r->premises, out);
 }
 
 /**
@@ -93,9 +107,7 @@ int regle_premise_head(const Regle *r, Proposition *out) {
  * @param r Règle cible.
  * @return 1 si oui, 0 sinon.
  */
-int regle_has_conclusion(const Regle *r) {
-    return r && r->has_conclusion;
-}
+int regle_has_conclusion(const Regle *r) { return r && r->has_conclusion; }
 
 /**
  * Récupère la conclusion d'une règle.
@@ -103,13 +115,14 @@ int regle_has_conclusion(const Regle *r) {
  * @return La proposition conclusion (valeur).
  */
 Proposition regle_get_conclusion(const Regle *r) {
-    if (!r || !r->has_conclusion) {
-        return proposition_make("", 0);
-    }
-    return r->conclusion;
+  if (!r || !r->has_conclusion) {
+    return proposition_make("", 0);
+  }
+  return r->conclusion;
 }
 
 void regle_remove_premises_by_name(Regle *r, const char *name) {
-    if (!r || !name) return;
-    (void)listp_remove_all_by_name(&r->premises, name);
+  if (!r || !name)
+    return;
+  (void)listp_remove_all_by_name(&r->premises, name);
 }

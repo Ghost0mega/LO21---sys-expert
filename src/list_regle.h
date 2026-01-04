@@ -2,14 +2,14 @@
 #include "regle.h"
 
 typedef struct ListRegleNode {
-    Regle value;
-    struct ListRegleNode *next;
+  Regle value;
+  struct ListRegleNode *next;
 } ListRegleNode;
 
 typedef struct ListRegle {
-    ListRegleNode *head;
-    ListRegleNode *tail;
-    size_t size;
+  ListRegleNode *head;
+  ListRegleNode *tail;
+  size_t size;
 } ListRegle;
 
 /**
