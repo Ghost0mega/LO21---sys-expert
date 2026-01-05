@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Site BuildName="Linux-g++-15"
+	BuildStamp="20260105-0726-Experimental"
+	Name="ShardOfEternity"
+	Generator="ctest-3.31.6"
+	CompilerName="/home/linuxbrew/.linuxbrew/bin/g++-15"
+	CompilerVersion=""
+	OSName="Linux"
+	Hostname="ShardOfEternity"
+	OSRelease="6.12.57+deb13-amd64"
+	OSVersion="#1 SMP PREEMPT_DYNAMIC Debian 6.12.57-1 (2025-11-05)"
+	OSPlatform="x86_64"
+	Is64Bits="1"
+	VendorString="GenuineIntel"
+	VendorID="Intel Corporation"
+	FamilyID="6"
+	ModelID="154"
+	ModelName="12th Gen Intel(R) Core(TM) i9-12900H"
+	ProcessorCacheSize="24576"
+	NumberOfLogicalCPU="20"
+	NumberOfPhysicalCPU="14"
+	TotalVirtualMemory="32452"
+	TotalPhysicalMemory="31784"
+	LogicalProcessorsPerPhysical="1"
+	ProcessorClockFrequency="3317.62"
+	>
+	<Testing>
+		<StartDateTime>Jan 05 08:26 CET</StartDateTime>
+		<StartTestTime>1767598002</StartTestTime>
+		<TestList/>
+		<EndDateTime>Jan 05 08:26 CET</EndDateTime>
+		<EndTestTime>1767598002</EndTestTime>
+		<ElapsedMinutes>0</ElapsedMinutes>
+	</Testing>
+</Site>

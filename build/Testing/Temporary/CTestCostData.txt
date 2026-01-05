@@ -1,0 +1,6 @@
+test_proposition 2 0.00483895
+test_list_proposition 2 0.0008377
+test_regle 2 0.000606343
+test_bc 2 0.000821655
+test_inference 2 0.000751605
+---

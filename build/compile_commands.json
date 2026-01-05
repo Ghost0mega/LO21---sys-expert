@@ -1,0 +1,80 @@
+[
+{
+  "directory": "/home/vixen/Documents/UTBM/TC05/LO21 (2eme du nom)/Projet/LO21---sys-expert/build",
+  "command": "/home/linuxbrew/.linuxbrew/bin/gcc-15 -DHAVE_CURSES -I\"/home/vixen/Documents/UTBM/TC05/LO21 (2eme du nom)/Projet/LO21---sys-expert/src\" -g -std=gnu99 -Wall -Wextra -Wpedantic -o CMakeFiles/sys_expert_lib.dir/src/bc.c.o -c \"/home/vixen/Documents/UTBM/TC05/LO21 (2eme du nom)/Projet/LO21---sys-expert/src/bc.c\"",
+  "file": "/home/vixen/Documents/UTBM/TC05/LO21 (2eme du nom)/Projet/LO21---sys-expert/src/bc.c",
+  "output": "CMakeFiles/sys_expert_lib.dir/src/bc.c.o"
+},
+{
+  "directory": "/home/vixen/Documents/UTBM/TC05/LO21 (2eme du nom)/Projet/LO21---sys-expert/build",
+  "command": "/home/linuxbrew/.linuxbrew/bin/gcc-15 -DHAVE_CURSES -I\"/home/vixen/Documents/UTBM/TC05/LO21 (2eme du nom)/Projet/LO21---sys-expert/src\" -g -std=gnu99 -Wall -Wextra -Wpedantic -o CMakeFiles/sys_expert_lib.dir/src/inference.c.o -c \"/home/vixen/Documents/UTBM/TC05/LO21 (2eme du nom)/Projet/LO21---sys-expert/src/inference.c\"",
+  "file": "/home/vixen/Documents/UTBM/TC05/LO21 (2eme du nom)/Projet/LO21---sys-expert/src/inference.c",
+  "output": "CMakeFiles/sys_expert_lib.dir/src/inference.c.o"
+},
+{
+  "directory": "/home/vixen/Documents/UTBM/TC05/LO21 (2eme du nom)/Projet/LO21---sys-expert/build",
+  "command": "/home/linuxbrew/.linuxbrew/bin/gcc-15 -DHAVE_CURSES -I\"/home/vixen/Documents/UTBM/TC05/LO21 (2eme du nom)/Projet/LO21---sys-expert/src\" -g -std=gnu99 -Wall -Wextra -Wpedantic -o CMakeFiles/sys_expert_lib.dir/src/list_proposition.c.o -c \"/home/vixen/Documents/UTBM/TC05/LO21 (2eme du nom)/Projet/LO21---sys-expert/src/list_proposition.c\"",
+  "file": "/home/vixen/Documents/UTBM/TC05/LO21 (2eme du nom)/Projet/LO21---sys-expert/src/list_proposition.c",
+  "output": "CMakeFiles/sys_expert_lib.dir/src/list_proposition.c.o"
+},
+{
+  "directory": "/home/vixen/Documents/UTBM/TC05/LO21 (2eme du nom)/Projet/LO21---sys-expert/build",
+  "command": "/home/linuxbrew/.linuxbrew/bin/gcc-15 -DHAVE_CURSES -I\"/home/vixen/Documents/UTBM/TC05/LO21 (2eme du nom)/Projet/LO21---sys-expert/src\" -g -std=gnu99 -Wall -Wextra -Wpedantic -o CMakeFiles/sys_expert_lib.dir/src/list_regle.c.o -c \"/home/vixen/Documents/UTBM/TC05/LO21 (2eme du nom)/Projet/LO21---sys-expert/src/list_regle.c\"",
+  "file": "/home/vixen/Documents/UTBM/TC05/LO21 (2eme du nom)/Projet/LO21---sys-expert/src/list_regle.c",
+  "output": "CMakeFiles/sys_expert_lib.dir/src/list_regle.c.o"
+},
+{
+  "directory": "/home/vixen/Documents/UTBM/TC05/LO21 (2eme du nom)/Projet/LO21---sys-expert/build",
+  "command": "/home/linuxbrew/.linuxbrew/bin/gcc-15 -DHAVE_CURSES -I\"/home/vixen/Documents/UTBM/TC05/LO21 (2eme du nom)/Projet/LO21---sys-expert/src\" -g -std=gnu99 -Wall -Wextra -Wpedantic -o CMakeFiles/sys_expert_lib.dir/src/print.c.o -c \"/home/vixen/Documents/UTBM/TC05/LO21 (2eme du nom)/Projet/LO21---sys-expert/src/print.c\"",
+  "file": "/home/vixen/Documents/UTBM/TC05/LO21 (2eme du nom)/Projet/LO21---sys-expert/src/print.c",
+  "output": "CMakeFiles/sys_expert_lib.dir/src/print.c.o"
+},
+{
+  "directory": "/home/vixen/Documents/UTBM/TC05/LO21 (2eme du nom)/Projet/LO21---sys-expert/build",
+  "command": "/home/linuxbrew/.linuxbrew/bin/gcc-15 -DHAVE_CURSES -I\"/home/vixen/Documents/UTBM/TC05/LO21 (2eme du nom)/Projet/LO21---sys-expert/src\" -g -std=gnu99 -Wall -Wextra -Wpedantic -o CMakeFiles/sys_expert_lib.dir/src/regle.c.o -c \"/home/vixen/Documents/UTBM/TC05/LO21 (2eme du nom)/Projet/LO21---sys-expert/src/regle.c\"",
+  "file": "/home/vixen/Documents/UTBM/TC05/LO21 (2eme du nom)/Projet/LO21---sys-expert/src/regle.c",
+  "output": "CMakeFiles/sys_expert_lib.dir/src/regle.c.o"
+},
+{
+  "directory": "/home/vixen/Documents/UTBM/TC05/LO21 (2eme du nom)/Projet/LO21---sys-expert/build",
+  "command": "/home/linuxbrew/.linuxbrew/bin/gcc-15 -DHAVE_CURSES -I\"/home/vixen/Documents/UTBM/TC05/LO21 (2eme du nom)/Projet/LO21---sys-expert/src\" -g -std=gnu99 -Wall -Wextra -Wpedantic -o CMakeFiles/sys_expert_lib.dir/src/ui.c.o -c \"/home/vixen/Documents/UTBM/TC05/LO21 (2eme du nom)/Projet/LO21---sys-expert/src/ui.c\"",
+  "file": "/home/vixen/Documents/UTBM/TC05/LO21 (2eme du nom)/Projet/LO21---sys-expert/src/ui.c",
+  "output": "CMakeFiles/sys_expert_lib.dir/src/ui.c.o"
+},
+{
+  "directory": "/home/vixen/Documents/UTBM/TC05/LO21 (2eme du nom)/Projet/LO21---sys-expert/build",
+  "command": "/home/linuxbrew/.linuxbrew/bin/gcc-15 -DHAVE_CURSES -I\"/home/vixen/Documents/UTBM/TC05/LO21 (2eme du nom)/Projet/LO21---sys-expert/src\" -g -std=gnu99 -o CMakeFiles/sys_expert.dir/src/main.c.o -c \"/home/vixen/Documents/UTBM/TC05/LO21 (2eme du nom)/Projet/LO21---sys-expert/src/main.c\"",
+  "file": "/home/vixen/Documents/UTBM/TC05/LO21 (2eme du nom)/Projet/LO21---sys-expert/src/main.c",
+  "output": "CMakeFiles/sys_expert.dir/src/main.c.o"
+},
+{
+  "directory": "/home/vixen/Documents/UTBM/TC05/LO21 (2eme du nom)/Projet/LO21---sys-expert/build",
+  "command": "/home/linuxbrew/.linuxbrew/bin/gcc-15 -DHAVE_CURSES -I\"/home/vixen/Documents/UTBM/TC05/LO21 (2eme du nom)/Projet/LO21---sys-expert/src\" -g -std=gnu99 -o CMakeFiles/test_proposition.dir/tests/test_proposition.c.o -c \"/home/vixen/Documents/UTBM/TC05/LO21 (2eme du nom)/Projet/LO21---sys-expert/tests/test_proposition.c\"",
+  "file": "/home/vixen/Documents/UTBM/TC05/LO21 (2eme du nom)/Projet/LO21---sys-expert/tests/test_proposition.c",
+  "output": "CMakeFiles/test_proposition.dir/tests/test_proposition.c.o"
+},
+{
+  "directory": "/home/vixen/Documents/UTBM/TC05/LO21 (2eme du nom)/Projet/LO21---sys-expert/build",
+  "command": "/home/linuxbrew/.linuxbrew/bin/gcc-15 -DHAVE_CURSES -I\"/home/vixen/Documents/UTBM/TC05/LO21 (2eme du nom)/Projet/LO21---sys-expert/src\" -g -std=gnu99 -o CMakeFiles/test_list_proposition.dir/tests/test_list_proposition.c.o -c \"/home/vixen/Documents/UTBM/TC05/LO21 (2eme du nom)/Projet/LO21---sys-expert/tests/test_list_proposition.c\"",
+  "file": "/home/vixen/Documents/UTBM/TC05/LO21 (2eme du nom)/Projet/LO21---sys-expert/tests/test_list_proposition.c",
+  "output": "CMakeFiles/test_list_proposition.dir/tests/test_list_proposition.c.o"
+},
+{
+  "directory": "/home/vixen/Documents/UTBM/TC05/LO21 (2eme du nom)/Projet/LO21---sys-expert/build",
+  "command": "/home/linuxbrew/.linuxbrew/bin/gcc-15 -DHAVE_CURSES -I\"/home/vixen/Documents/UTBM/TC05/LO21 (2eme du nom)/Projet/LO21---sys-expert/src\" -g -std=gnu99 -o CMakeFiles/test_regle.dir/tests/test_regle.c.o -c \"/home/vixen/Documents/UTBM/TC05/LO21 (2eme du nom)/Projet/LO21---sys-expert/tests/test_regle.c\"",
+  "file": "/home/vixen/Documents/UTBM/TC05/LO21 (2eme du nom)/Projet/LO21---sys-expert/tests/test_regle.c",
+  "output": "CMakeFiles/test_regle.dir/tests/test_regle.c.o"
+},
+{
+  "directory": "/home/vixen/Documents/UTBM/TC05/LO21 (2eme du nom)/Projet/LO21---sys-expert/build",
+  "command": "/home/linuxbrew/.linuxbrew/bin/gcc-15 -DHAVE_CURSES -I\"/home/vixen/Documents/UTBM/TC05/LO21 (2eme du nom)/Projet/LO21---sys-expert/src\" -g -std=gnu99 -o CMakeFiles/test_bc.dir/tests/test_bc.c.o -c \"/home/vixen/Documents/UTBM/TC05/LO21 (2eme du nom)/Projet/LO21---sys-expert/tests/test_bc.c\"",
+  "file": "/home/vixen/Documents/UTBM/TC05/LO21 (2eme du nom)/Projet/LO21---sys-expert/tests/test_bc.c",
+  "output": "CMakeFiles/test_bc.dir/tests/test_bc.c.o"
+},
+{
+  "directory": "/home/vixen/Documents/UTBM/TC05/LO21 (2eme du nom)/Projet/LO21---sys-expert/build",
+  "command": "/home/linuxbrew/.linuxbrew/bin/gcc-15 -DHAVE_CURSES -I\"/home/vixen/Documents/UTBM/TC05/LO21 (2eme du nom)/Projet/LO21---sys-expert/src\" -g -std=gnu99 -o CMakeFiles/test_inference.dir/tests/test_inference.c.o -c \"/home/vixen/Documents/UTBM/TC05/LO21 (2eme du nom)/Projet/LO21---sys-expert/tests/test_inference.c\"",
+  "file": "/home/vixen/Documents/UTBM/TC05/LO21 (2eme du nom)/Projet/LO21---sys-expert/tests/test_inference.c",
+  "output": "CMakeFiles/test_inference.dir/tests/test_inference.c.o"
+}
+]

@@ -1,0 +1,31 @@
+# ninja log v6
+182	201	1767595917275766244	test_proposition	3965e50cb6a684df
+13	15	1767564032108935577	clean	a31eedcededa8236
+11	37	1767564032120935738	CMakeFiles/sys_expert.dir/src/regle.c.o	7b92cfe9d405dcfa
+11	34	1767564032120935738	CMakeFiles/sys_expert.dir/src/list_regle.c.o	f10d02b43044de6a
+182	201	1767595917275766244	test_bc	5bb31361aa943a9b
+182	201	1767595917275766244	test_regle	f3ab5387fce3372c
+181	208	1767595917275766244	sys_expert	6c8209c6bae6780f
+12	105	1767595917103764220	CMakeFiles/sys_expert_lib.dir/src/ui.c.o	81266b71ea5264ad
+10	45	1767564032120935738	CMakeFiles/sys_expert.dir/src/bc.c.o	2ef3152f041e58ed
+10	37	1767564032120935738	CMakeFiles/sys_expert.dir/src/inference.c.o	c24aadc5717c2ec1
+11	67	1767564032120935738	CMakeFiles/sys_expert.dir/src/print.c.o	31e9b31b996192b3
+15	56	1767595917107764267	CMakeFiles/test_inference.dir/tests/test_inference.c.o	ce2089cb83f653eb
+12	51	1767595917103764220	CMakeFiles/sys_expert_lib.dir/src/regle.c.o	f246de90aa7f0a5d
+11	72	1767564032120935738	CMakeFiles/sys_expert.dir/src/ui.c.o	ed9a62fb4c6e456e
+182	201	1767595917275766244	test_inference	c88eee5d06e64b88
+10	39	1767564032120935738	CMakeFiles/sys_expert.dir/src/list_proposition.c.o	2746d78c387a5879
+182	201	1767595917275766244	test_list_proposition	674ce0d055fc12a3
+12	44	1767595917103764220	CMakeFiles/sys_expert.dir/src/main.c.o	bc5f5cb2688070
+1	11	1767595917095764126	/home/vixen/Documents/UTBM/TC05/LO21 (2eme du nom)/Projet/LO21---sys-expert/build/CMakeFiles/cmake.verify_globs	6d84aeb6936cd2aa
+11	45	1767595917103764220	CMakeFiles/sys_expert_lib.dir/src/bc.c.o	3c8fb12cf499f86c
+10	39	1767598002053123940	build.ninja	3135a249d28b3576
+12	51	1767595917103764220	CMakeFiles/test_proposition.dir/tests/test_proposition.c.o	a632b91062dacfee
+12	45	1767595917103764220	CMakeFiles/sys_expert_lib.dir/src/list_regle.c.o	50b4ff186fbb146f
+11	44	1767595917103764220	CMakeFiles/sys_expert_lib.dir/src/inference.c.o	c32eb4a25469fa84
+12	51	1767595917103764220	CMakeFiles/sys_expert_lib.dir/src/list_proposition.c.o	5749e0d39a3cca0b
+13	56	1767595917107764267	CMakeFiles/test_list_proposition.dir/tests/test_list_proposition.c.o	5935f4b56fbad82
+14	59	1767595917107764267	CMakeFiles/test_bc.dir/tests/test_bc.c.o	2fc32a95f907792a
+14	51	1767595917107764267	CMakeFiles/test_regle.dir/tests/test_regle.c.o	6420254648b8cc3c
+12	67	1767595917103764220	CMakeFiles/sys_expert_lib.dir/src/print.c.o	29a431b7fdb82322
+105	181	1767595917199765349	libsys_expert_lib.a	e917694f4524083f

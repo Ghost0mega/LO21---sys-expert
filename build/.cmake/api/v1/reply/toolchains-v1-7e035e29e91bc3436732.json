@@ -1,0 +1,59 @@
+{
+	"kind" : "toolchains",
+	"toolchains" : 
+	[
+		{
+			"compiler" : 
+			{
+				"id" : "GNU",
+				"implicit" : 
+				{
+					"includeDirectories" : 
+					[
+						"/home/linuxbrew/.linuxbrew/Cellar/gcc/15.2.0/lib/gcc/current/gcc/x86_64-pc-linux-gnu/15/include",
+						"/home/linuxbrew/.linuxbrew/Cellar/gcc/15.2.0/lib/gcc/current/gcc/x86_64-pc-linux-gnu/15/include-fixed/x86_64-linux-gnu",
+						"/home/linuxbrew/.linuxbrew/Cellar/gcc/15.2.0/lib/gcc/current/gcc/x86_64-pc-linux-gnu/15/include-fixed",
+						"/home/linuxbrew/.linuxbrew/Cellar/gcc/15.2.0/include",
+						"/home/linuxbrew/.linuxbrew/include",
+						"/usr/include/x86_64-linux-gnu",
+						"/usr/include"
+					],
+					"linkDirectories" : 
+					[
+						"/home/linuxbrew/.linuxbrew/Cellar/gcc/15.2.0/lib/gcc/current/gcc/x86_64-pc-linux-gnu/15",
+						"/home/linuxbrew/.linuxbrew/Cellar/gcc/15.2.0/lib/gcc/current/gcc",
+						"/home/linuxbrew/.linuxbrew/Cellar/gcc/15.2.0/lib/gcc/current",
+						"/lib/x86_64-linux-gnu",
+						"/lib",
+						"/usr/lib/x86_64-linux-gnu",
+						"/usr/lib",
+						"/home/linuxbrew/.linuxbrew/lib/gcc/current",
+						"/home/linuxbrew/.linuxbrew/lib"
+					],
+					"linkFrameworkDirectories" : [],
+					"linkLibraries" : 
+					[
+						"gcc",
+						"gcc_s",
+						"c",
+						"gcc",
+						"gcc_s"
+					]
+				},
+				"path" : "/home/linuxbrew/.linuxbrew/bin/gcc-15",
+				"version" : "15.2.0"
+			},
+			"language" : "C",
+			"sourceFileExtensions" : 
+			[
+				"c",
+				"m"
+			]
+		}
+	],
+	"version" : 
+	{
+		"major" : 1,
+		"minor" : 0
+	}
+}
