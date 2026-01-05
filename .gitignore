@@ -54,7 +54,4 @@ dkms.conf
 # debug information files
 *.dwo
 
-# Executables n shit
-*.exe
-/bin
-/build
+
